@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-primary: #000000;
+  --primary-text: #ffffff;
+  --secondary-text: #f75a68;
+  --talbe-even: #021418;
+  --table-odd: #072832;
+  --bg-button: #065e7c;
+  --bg-table: #072128;
+  --border-tb: #043341;
+
+  background: var(--bg-primary);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+
+  max-width: 800px;
+  margin-top: 8rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 0.5rem;
+}
+
+#input {
+  padding: 1rem;
+  border-radius: 5px;
+  width: 32rem;
+  border: none;
+
+  background: var(--talbe-even);
+  color: var(--primary-text);
+  font-weight: bold;
+
+  height: 3.2rem;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  border-radius: 5px;
+
+  background: var(--bg-button);
+  color: var(--primary-text);
+  font-weight: bold;
+
+  width: 12rem;
+  cursor: pointer;
+  height: 3.2rem;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--primary-text);
+
+}
+
+table th {
+  background: var(--bg-table);
+  padding: 1.6rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--talbe-even);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--table-odd);
+}
+
+table td {
+  padding: 1.6rem;
+  text-align: left;
+
+}
+
+
+td button{
+  border: none;
+  background: none;
+  color: var(--secondary-text);
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+td.user{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+td.user img{
+  height: 5rem;
+  width: 5rem;
+
+  object-fit: cover;
+  border-radius: 50% ;
+}
+
+#empty{
+  width: 100%;
+  padding: 10rem 12rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  background-color: var(--talbe-even);
+  color: var(--primary-text);
+  font-size: 25px;
+
+  overflow: hidden;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+
+}
+
+#empty p{
+  opacity: 10%;
+}
+
+#empty img{
+  height: 15rem;
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}
